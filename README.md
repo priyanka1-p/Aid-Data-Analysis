@@ -2,7 +2,7 @@
 
 I suggest you route through the index page where you will be guided in a flow
 
-To access the network graph page route to - https://github.com/priyanka1-p/Aid-Data-Analysis/blob/main/network.html
+To access the network graph page route to - https://priyanka1-p.github.io/Aid-Data-Analysis/network.html
 to access the pie chart graph page route to - https://jaikishan52.github.io/Aid_data_analysis/mypiechart.html
 To access the bar chart page route to - https://jaikishan52.github.io/Aid_data_analysis/detailed_viz.html
 To get to know about the project, introduction ,related works, implementation , project data, data cleaning, data transformation, visualization tools used, future works and references  route to this page - https://jaikishan52.github.io/Aid_data_analysis/index.html
