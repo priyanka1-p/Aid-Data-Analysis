@@ -7,7 +7,7 @@ to access the pie chart graph page route to - https://priyanka1-p.github.io/Aid-
 To access the bar chart page route to - https://priyanka1-p.github.io/Aid-Data-Analysis/detailed_viz.html
 To get to know about the project, introduction ,related works, implementation , project data, data cleaning, data transformation, visualization tools used, future works and references  route to this page - https://priyanka1-p.github.io/Aid-Data-Analysis/index.html
 
-Technolgies used: html,css,bootstrap, java script,jquery, Python
+Technolgies used: html,css,bootstrap, java script,jquery, Python.
 Here you can find all the images which are included in the website and also all the routing pages mentioned above in html format.
 All the styling and scripting for the web pages is done inside the html itself.
 
