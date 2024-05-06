@@ -1,0 +1,26 @@
+--> To make use of the tableau work book we need to first download the tableau public app 
+https://www.tableau.com/trial/download-tableau?utm_campaign_id=2017049&utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_language=EN&utm_country=USCA&kw=download%20tableau%20desktop&adgroup=CTX-Brand-Download-E&adused=RESP&matchtype=e&placement=&d=7013y000000vYhH&nc=7013y0000029zDoAAI&cq_cmp=1695532942&cq_net=g&cq_plac=&gad_source=1&gclid=Cj0KCQiAsburBhCIARIsAExmsu4W-pfdQWPbsdf3bzsePzUSvr27r4ASJjAkm-CyUZs4p2YIWkvFbYkaAvvjEALw_wcB&gclsrc=aw.ds
+--> After downloading and installing the app we can open our downloaded workbook and make sure you import the data inside the data source section.
+-->In the following folder you will find two workbooks and data files of network graph and bar graph.
+
+-->Coming to the pie chart visualization here we have used jupyter notebook. 
+https://jupyter.org/install
+-->After installing jupyter notebook you just import the data file and .ipynb into the cloud space of jupyter notebook. 
+-->After mounting it just open the notebook file and start running each cell
+--> Where in the end you will get an option to download the html version of the piechart visualization.
+
+The main reason for saving the visualization in html format because we can import it in our website.
+You may wonder how can we import the tableau visualizations, this can be done by publishing the visualization into tableau public.
+After publishing it you will find a share option where you just copy/paste the code provided in your html page to import the following visualizations. 
+
+To access the network graph page route to - https://jaikishan52.github.io/Aid_data_analysis/network.html
+to access the pie chart graph page route to - https://jaikishan52.github.io/Aid_data_analysis/mypiechart.html 
+To access the bar chart page route to - https://jaikishan52.github.io/Aid_data_analysis/detailed_viz.html
+To get to know about the project, introduction ,related works, implementation , project data, data cleaning, data transformation, 
+visualization tools used, future works and references route to this page - https://jaikishan52.github.io/Aid_data_analysis/index.html
+To get to know the results of the visualization route to - https://jaikishan52.github.io/Aid_data_analysis/results.html
+
+To create the following website I have used html, css, boostrap, javascript, jquery.
+To create the pie chart I have used python, pandas, plotly and matplotlib.
+
+To host in github public just push in all your files and then click on pages and select the root /main file and click on deploy.

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aid Data Analysis</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+
+        color: black;
+        margin: 0;
+        padding: 0;
+      }
+      .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      
+      text-align: center;
+      padding: 2px 0; /* Adjust padding as desired */
+      
+    }
+      header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      nav {
+        background-color: black;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-bottom: 1px white;
+        font-weight: 350;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      section-container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: black;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: black;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      section {
+        display: none;
+      }
+      #abstract {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Aid Data Analysis</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="network.html">Network Visualization</a>
+      <a href="detailed_viz.html">Bar Chart Visualization</a>
+      <a href="mypiechart.html">Pie Chart Visualization</a>
+      <a href="results.html">Results</a>
+    </nav>
+
+    <div class="section-container">
+     
+      <div class="container-xxl">
+        <h2>Abstract</h2>
+        <p>This topic gives detailed information about the Financial Aid Data Transactions between donors and recipients all over the world between 1991 to 2010. This data covers the information about the number of donors, recipients, and amount donated in dollars and also it gives the purpose for which the amount was donated. It mainly focuses on how much amount has been donated by each country and the amount donated for what purpose to which country during a particular period or over all the years. This methodology involves data cleaning, data collection to enhance reliability, and data visualization which will help in understanding the structure of data, interpreting and communicating the highlights of data. The main aim of this project is to show the understanding of International Aid data distribution showing trends and correlations that will be helpful for the government or any funding agencies to understand the needs of each country, and to which of the following countries the funds need to be provided.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Screenshot_2023-12-04_at_2.28.40_AM_9.png" class="card-img-top img-fluid" style="height: 430px; object-fit: cover" alt="Image 1" />
+              
+              <div class="card-body">
+                <h5 class="card-title">Network graph visualization</h5>
+                <p class="card-text">To know no of donations done by each donor over all the years</p>
+                <a href="network.html" class="btn btn-primary stretched-link">Click Here</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="Screenshot_2023-12-04_at_2.29.11_AM_9.png" class="card-img-top img-fluid" style="height: 400px; object-fit: cover" alt="Image 2" />
+              <div class="card-body">
+                <h5 class="card-title">Bar graph visualization</h5>
+                <p class="card-text">To know amount donated by a donor to a recipient in a particular year or over all the years for the respective needs.</p>
+                <a href="detailed_viz.html" class="btn btn-primary stretched-link">Click Here</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="newplot (1).png" class="card-img-top img-fluid" style="height: 420px; object-fit: cover" alt="Image 3" />
+              <div class="card-body">
+                <h5 class="card-title">Pie Chart visualization</h5>
+                <p class="card-text">To know no of donations done by each donor in a particular year and over all the years</p>
+                <a href="mypiechart.html" class="btn btn-primary stretched-link">Click Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     &nbsp; &nbsp; &nbsp;  &nbsp;    
+    <div class="container-xxl">
+      
+        <h2>Introduction</h2>
+        <p>Aid Data<a href="#" class="scroll-to-bottom">[6]</a>  is an important policy tool for supporting economically developing countries. Between 1991 to 2010 most of the countries have donated lots of amounts based on different purposes for many developing countries(Recipients). This shows the data about the financial aid distribution globally. This dataset is rich in both categorical and quantitative data which gives us a unique opportunity to understand the complex details of global economic policies and the aid data<a href="#" class="scroll-to-bottom">[6]</a> . This project aims to make use of the data for showing the interactive visualizations by focussing on the years between 1991 to 2010. By creating interactive visualizations the team not only aims to clarify the distribution and impact of global financial aid but also seeks to inform policy negotiations and decision-making processes. This whole endeavor is supported by various tools, but we are choosing tableau and python which enables us to present complex data in an accessible manner. The visualizations we are using are highly interactive which allows users to explore the data in depth. These enhance the user experience significantly when compared to online static charts. For this Project we are planning to show two to three visualizations: Network Graph, Stacked Bar Chart, Sunburst Chart where each visualization shows the different information about the Aid Data<a href="#" class="scroll-to-bottom">[6]</a> . In Summary “Distribution of Global Financial Aid over the years” is a good project which leverages data visualization to visualize the complex data to the field of global data analysis, Local audience etc.,</p>
+       
+      
+    </div>
+    &nbsp; &nbsp; &nbsp;  &nbsp;  
+    
+    </div>  
+      <div class="container-xxl">
+        <h2>Related Works:</h2>
+        <div class="row g-0 bg-body-secondary position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="Screenshot_2023-11-21_at_3.39.29_PM_9.png" class="w-100" alt="...">
+            <p>Figure 1: The geographical map visualization represents the aid amount donated or received by the countries.</p>
+          </div>
+          
+          <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0">Canada’s Foreign Aid:</h5>
+          
+            <p>Our project is related to the reference <a href="#" class="scroll-to-bottom">[1]</a>(figure 1) For example if the map visualization represents data on the Canadian aid amount the country has received over the years. The size of each circle in the map corresponds to the aid amount given also when we click on the circle we can see more details like year, disbursement(the aid amount the recipient country received) and we can see more details for what purpose the amount is donated, it is also slightly different from our project visualization where we have taken two nodes(shapes) to represent both donor, recipient and connected them with edges(links) for a clear picture. The above padlet reference has some interesting filters like drop-downs to limit the data by region or change year which could be implemented in our project.</p>
+            
+          </div>
+        </div>
+        &nbsp; &nbsp; &nbsp;  &nbsp;   
+        <div class="row g-0 bg-body-secondary position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="freecompress-Screenshot-2023-11-21-at-3.png" class="w-100" alt="...">
+            <p>Figure 2: The network graph represents various COVID-19 diseases and the following treatments which can be given.</p>
+          </div>
+          <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0">Network graph of COVID-19 data for Aid discovery:</h5>
+            <p>The network graph that we have executed is quite similar to Figure 2 in the reference <a href="#" class="scroll-to-bottom">[2]</a> where this visualization is regarding the COVID-19 diseases and the following treatments which can be given to them based on data for each disease. For suppose it is a virus all the following edges and nodes are colored with the same color which makes the information much clear that the nodes and edges with violet color are related to the virus they should be treated accordingly, the same goes for if it is Therapeutic or preventive procedure the disease and its following edges related to it become orange and if the following diseases can be treated by pharma they can be colored with purple. Here the marks are: For the network graph, the marks are going to be points and lines. Where points indicate the nodes and lines denote the links in the graph. Coming to channels we have area, shape, and color hue. And in comparison with our project, the representation of network graphs is quite similar where we have donors and recipients with their respective donations being made. The size of the donor or recipient varies with the amount donated or received by it. When clicking on the donor we will be able to the respective recipients it has donated to but by taking the above graph as a reference we can add the color to the edges so that when clicking on the donor we will be able to see the edges of the respective donors to recipients where it doesn't get clustered with the existing nodes and edges.</p>
+            
+          </div>
+        </div>
+        &nbsp; &nbsp; &nbsp;  &nbsp;   
+        <div class="row g-0 bg-body-secondary position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="Screenshot_2023-12-04_at_3.32.59_AM_9.png" class="w-100" alt="...">
+            <p>Figure 3: A sunburst chart visualization to summarize the user navigation paths.</p>
+          </div>
+          <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0">Applying a Sunburst Visualization to Summarize User Navigation Sequences:</h5>
+            
+            <p>In the attached research paper<a href="#" class="scroll-to-bottom">[3]</a>, I found a visualization (figure 3) based on the user navigation techniques. The Sunburst chart is used to summarize the user navigation paths in a website by Kerry Rodden from Google. It is used to show the site navigation data for YouTube. In the sunburst chart, the inner ring represents the first event in the visit and the outer ring represents the subsequent events. In this, the marks are arc segments and channels represent segment sizes and colors. And we can relate this to our project as it is almost the same. The difference is that there are multiple outer rings in the research paper whereas there are only 2 rings in our project: outer and inner rings. The size of the outer and inner rings varies based on the amount donated and received.</p>
+            
+          </div>
+        </div>
+        &nbsp; &nbsp; &nbsp;  &nbsp; 
+        <div class="row g-0 bg-body-secondary position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="image.webp" class="w-100" alt="...">
+            <p>Figure 4: Classified funding done from time to time using bar chart </p>
+          </div>
+          <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0">Bar chart visualization for funding</h5>
+            <p>In the Figure 4 we have Marks: Lines
+              Channels: colour, length, position: horizontal, vertical
+              Here the unique ID numbering is categorical, the purpose for donation is categorical and the amount donated is quantitative. The colour of the graphs is dependent on the purpose of the donation. The length of each bar is dependent on the amount donated. The main purpose of this graph can be used to get a summary of all donations done from one period to another period of time for all purposes of donations. 
+              And this reference<a href="#" class="scroll-to-bottom">[4]</a> has been a very good example for our bar chart where we are using different colors for purpose of donations, the size of the bars varies with the amount received by the country within a particular year, and the amount donated for each purpose is label on the bar.
+              </p>
+           
+          </div>
+        </div>
+
+      </div>
+      &nbsp; &nbsp; &nbsp;  &nbsp; 
+      
+        <div class="container-xxl">
+        <h2>Implementation</h2>
+        &nbsp; &nbsp; 
+        <h3>Data transformation:</h3>
+        <p>The gathered data set is in tabular form which has items and attributes but as I have planned to visualize the following data in a Network graph I need to have a network data type that has items(nodes), links, and attributes. To create those nodes I have created some calculated fields like one calculated field which has donors, amount donated, and type= “donor” and another one which has recipients, amount received, and type=“recipient. By combining those two calculated fields we can get our nodes. The edges or links are formed by using this calculated field which combining 
+          source=“donor” and target=“recipient “.</p>
+          &nbsp; &nbsp; 
+        <h3>Data cleaning:</h3>  
+        <p>In the tableau, we are using the option Data interpreter to clean the data just by selecting it for the network graph and bar graph. As for the Pie chart we have used Python<a href="#" class="scroll-to-bottom">[14]</a> , and pandas<a href="#" class="scroll-to-bottom">[15]</a>  to clean the data.  After importing the data we found some irregularities in the column names and the data type of each attribute present. By using the methods of Python<a href="#" class="scroll-to-bottom">[14]</a>  and pandas <a href="#" class="scroll-to-bottom">[15]</a>  we were able to clean the data and assign them the respective data types. </p>
+        &nbsp; &nbsp;
+        <h3>Visualization Tools and Programming languages used:</h3>
+        <p>The visualization tools we used are Tableau<a href="#" class="scroll-to-bottom">[11]</a>  and the Programming language is Python<a href="#" class="scroll-to-bottom">[14]</a> . For the Network graph and Stacked bar chart, we used Tableau. For the Sunburst chart, we have written our program in Python language. We used a Jupyter Notebook<a href="#" class="scroll-to-bottom">[17]</a> to write our code in Python<a href="#" class="scroll-to-bottom">[14]</a> . We used Python<a href="#" class="scroll-to-bottom">[14]</a>  libraries like plotly<a href="#" class="scroll-to-bottom">[10]</a>, and matplotlib<a href="#" class="scroll-to-bottom">[18]</a>  in our code. Plotly. express is for creating an interactive sunburst chart based on the year and color that we selected in the dropdown menus. Software Architecture: We used Jupyter Notebook to create a Sunburst Chart and inside it, we used a pip installer to install the required libraries. Also, we used Tableau to create a Network Graph and Stacked Bar Chart. We stored our data dataset locally in Excel file format for retrieving the data. To retain all the generated intermittent files we used pandas<a href="#" class="scroll-to-bottom">[15]</a>  in Python<a href="#" class="scroll-to-bottom">[14]</a> , by this the data transformation has been done.
+          The following front-end technologies used to design the website are HTML<a href="#" class="scroll-to-bottom">[21]</a>, CSS<a href="#" class="scroll-to-bottom">[22]</a> bootstrap<a href="#" class="scroll-to-bottom">[7]</a> , javascript<a href="#" class="scroll-to-bottom">[19]</a> , and jquery<a href="#" class="scroll-to-bottom">[20]</a> .
+          By mounting all the files into the GitHub public we were able to host the following website. </p>
+        <h2>Project Data:</h2>
+        <p>The aid data set <a href="#" class="scroll-to-bottom">[6]</a> is a collection of information regarding financial transactions or assistance, projects, and activities that are taken forward by different donors and recipients. When looking at the raw data we can see all the transactions done from the donor to recipient in the respective year and for which reason it is done. To understand the purpose of the donation we have coalesced_purpose_code which uniquely identifies the coalesced_purpose_name which states the reason for the donation. After having a look at the raw data, we can see that the data set type is a table that contains items and attributes. Another perspective that may provide some insight might be to consider the data as a network of nodes. The nodes are formed by combining (donors, amount donated), (recipient, amount donated), and the edges are formed by combining(source=” donors” and target = “recipients”) As there is a link among years, donor, recipient, amount donated, unique colesced_purpose_code, and colesced_purpose_name which states in this particular year the respective donor has donated to this recipient clearly stating the purpose of the donation by making use of colesced_purpose_code and colesced_purpose_name. Here are the following attributes present in the data set.</p>
+        <ul>
+          <li>Aiddata_id: It uniquely defines each record of data which is inserted to track back the data when needed. (categorical)</li>
+          <li>Year: It provides us with which year the following transaction is done. (quantitative).</li>
+          <li>Donor: It tells us about the following country that has provided the donation. (categorical)</li>
+          <li>Recipient: It tells us about the following country which has received the donation. (categorical)</li>
+          <li>Commitment_amount_usd_constant: It provides us with information about how much donation has been provided from the donor to the recipient. (quantitative)</li>
+          <li>Colesced_purpose_code: It is a unique code that is used to identify the unique purpose(coalesced_purpose_name) for the donation. (categorical)</li>
+          <li>Colesced_purpose_name: Here we find the unique purpose for the donation or aid provided from donor to recipient. (categorical)</li>
+        </ul>
+      </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="container-xxl">
+        <h2>Future Works:</h2>
+        <li>The front end can be improved by using react where the user can have a better experience. </li>
+        <li>The network is a bit clustered so we felt we need to try visualizing using tidygraph</li>
+        <li>We will try to find some real time data like relation between population and avg economy of the country so that the donations can be done</li>
+        <li>Should look for ways to speed up the load time of Piechart </li>
+        <li>Implement checks to ensure data consistency, such as verifying that the aid amounts are positive, and the year is within a realistic range.</li>
+
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="container-xxl">
+        <div id="#references">
+        <h2>References</h2>
+        <ul>
+          <li>[1]  A. Bhushan, “Canada’s foreign aid,” CIDP | Canadian International Development Platform, Mar. 29, 2022. http://cidpnsi.ca/canadas-foreign-aid-2012-2/</li>
+          <li>[2]  Cernile G, Heritage T, Sebire NJ, et al Network graph representation of COVID-19 scientific publications to aid knowledge discovery BMJ Health & Care Informatics 2021;28:e100254. doi: 10.1136/bmjhci-2020-100254 https://informatics.bmj.com/content/bmjhci/28/1/e100254.full.pdf</li>
+          <li>[3]  “Visualising Geospatial data with Python using Folium - KDnuggets,” KDnuggets. https://www.kdnuggets.com/2018/09/visualising-geospatial-data-python-folium.html</li>
+          <li>[4]  Cernile G, Heritage T,
+            Sebire NJ, et al. Network graph
+            representation of COVID-19
+            scientific publications to
+            aid knowledge discovery.
+            BMJ Health Care Inform
+            2021;28:e100254. doi:10.1136/
+            bmjhci-2020-100254. https://informatics.bmj.com/content/bmjhci/28/1/e100254.full.pdf</li>
+          <li>[5]  OpenAI. (2023). GPT-3. ChatGPT [Chatbot application]. Retrieved from https://www.openai.com/chatgpt [Accessed 21 November 2023].</li>
+          <li>[6] Aid Data, Tierney, Michael J., Daniel L. Nielson, Darren G. Hawkins, J. Timmons Roberts, Michael G. Findley, Ryan M. Powers, Bradley Parks, Sven E. Wilson, and Robert L. Hicks. 2011. More Dollars than Sense: Refining Our Knowledge of Development Finance Using AidData. World Development 39 (11): 1891-1906. </li>
+          <li>[7]  M. O. J. T. Contributors and Bootstrap, “Get started with Bootstrap.” https://getbootstrap.com/docs/5.3/getting-started/introduction/</li>
+          <li>[8]  Ladataviz, “Create a Network Chart (fast and simple) | Tableau Tutorial,” YouTube. Jan. 23, 2023. [Online].  https://www.youtube.com/watch?v=A9MP2MJpyQc</li>
+          <li>[9]  Tableau, “How to create a Dual Axis & Stacked Grouped Bar Charts in Tableau,” YouTube. Aug. 22, 2018. [Online]. https://www.youtube.com/watch?v=AUjgvzFK2RM</li>
+          <li>[10] Pie, "Pie charts in Python", https://plotly.com/python/pie-charts/, [Accessed  December 4, 2023] </li>
+          <li>[11] Tableau, "public.tableau.com", 
+            https://public.tableau.com/ [Accessed December 4, 2023]</li>
+          <li>[12] “GitHub: Let’s build from here,” GitHub. https://github.com/ [Accessed on December 4, 2023]</li>
+          <li>[13] Kenny Yip Coding, “How to host a website on GitHub Pages,” YouTube. Jun. 20, 2022. [Online]. Available: https://www.youtube.com/watch?v=OltY8JIaP-4</li>
+          <li>[14] “Python Release Python 3.9.12,” Python.org. https://www.python.org/downloads/release/python-3912/ </li>
+          <li>[15] “pandas - Python Data Analysis Library.” https://pandas.pydata.org/ </li>
+          <li>[16] Interactive, "Interactive html export in Python", https://plotly.com/python/interactive-html-export/#controlling-the-size-of-the-html-file [Accessed on December 4, 2023]</li>
+          <li>[17] “Project Jupyter,” Home. https://jupyter.org/ [Accessed on Dec 4, 2023]</li>
+          <li>[18] “Matplotlib — Visualization with Python.” https://matplotlib.org/ [Accessed on Dec 4, 2023] </li>
+          <li>[19] “Learn JavaScript online - Courses for beginners - Javascript.com.” https://www.javascript.com/ [Accessed on Dec 4, 2023]</li>
+          <li>[20]  OpenJS Foundation - openjsf.org, “JQuery.” https://jquery.com/ [Accessed on Dec 4, 2023]</li>
+          <li>[21]  Frank Moraes is an editor and writer at HTML.com and other nerdy websites., “Home,” HTML.com, Jan. 01, 2020. https://html.com/</li>
+          <l1>[22]  “CSS tutorial.” https://www.w3schools.com/css/ [Accessed on Dec 4, 2023]</l1>
+        </ul>
+      </div>
+    </div>
+
+      </div>
+      
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    // Force scroll to the bottom of the page
+    $(".scroll-to-bottom").click(function(event) {
+      event.preventDefault();
+      // $(window).scrollTop($(document).height());
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="footer">
+    <p style="color: white;">Aid Data Analysis by Jai Kishan Timmapatruni, Lakshmipriyanka Penchikala, Mounika Ummadi </p>
+  </div>
+</html>
